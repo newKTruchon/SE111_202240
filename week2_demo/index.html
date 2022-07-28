@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W2D2 | Demo</title><!--tab name in browser-->
+
+    <style>
+        /*we are now writing in CSS*/
+        
+        /*CSS SYNTAX
+
+            selector { 
+                property: vaulue;
+                property: value;
+            }
+
+        */
+
+        /*Selector options: TAG TYPE (), ID (), CLASS () */
+
+        body {/*applies to body element (including content!)*/
+            background-color:lightslategrey;
+        }
+
+        h2 {
+            font-family:helvetica, sans-serif;
+        }
+
+        div {
+            border:1px solid black;
+            margin:20px; /*adds space between element and neighboring elements (top, right, bottom, left) */
+            background-color:grey;
+        }
+
+        #characters {
+            border:5px solid green;
+        }
+
+    </style> 
+
+</head>
+<body>
+    <!--this is where content goes!-->
+    <h1>Katie Truchon</h1>
+    <hr>
+
+    <div id="characters">
+        <h2>Favorite Characters</h2>
+
+        <ol>
+            <li>Drogon!</li>
+            <li>Jaime Lannister</li>
+            <li>Daenerys Targaryen</li>
+            <li>Ghost!</li>
+        </ol>
+    </div>
+
+
+    <div id="tv-shows">
+        <h2>Favorite Shows</h2>
+
+        <ul>
+            <li>Game of Thrones</li>
+            <li>Westworld</li>
+            <li>Murder, She Wrote</li>
+            <li>Star Trek: Next Generation</li>
+        </ul>
+
+        <!--relative path for image below (lives in the root where index.html is)-->
+        <img src="images/stormsEnd.jpg" alt="Storm's End springtime illustration -  castle by the sea" width="250px">
+    </div>  
+
+    <hr>
+
+    <p>Hi! I am an Assistant Professor of Information Technology and Digital Design. I live in a <i>yellow</i> house with two dogs and one spoiled cat baby. I enjoy reading and <em>gardening</em> and trying out new restuarants.</p>
+
+    <!--absolute path for image below (full URL w/ protocol! not my image, someone else's)-->
+    <img src="https://helios-i.mashable.com/imagery/articles/01Ya6BmVcgHY4LzPRfwnTmr/hero-image.fill.size_1248x702.v1623364902.jpg" alt="spicy boi Drogon the dragon!" width="250px">
+
+    <!--links - external = outside of our domain, internal = in our root folder, in-page = jumping to a section in the current html page-->
+    <a href="https://www.youtube.com/watch?v=DotnJ7tTA34" target="_blank">House of the Dragon Trailer</a>
+</body>
+</html>
+
