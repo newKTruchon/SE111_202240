@@ -118,9 +118,13 @@
         //SHORT VERSION BELOW
         //var newP = `<p>hell world! this content was added to the page using Javascript!</p>` 
 
+
         //add the new variable data to the HTML page - do this by adding to the END of the body element (previously stored to the var body)
         body.innerHTML += newP //"add newP to the end of the innerHTML of the body element"; .innerHTML --> accesses content INBETWEEN open and close tags
 
+            
+
+        
         //adding an event listener to the #enter-button at the end of the mini form
         document.querySelector(`#enter-button`).addEventListener(`click`, alertInfo)
         
@@ -155,6 +159,10 @@
 
         }
 
+    
+
+
+        
         //global variables -- these values are accessibe anywhere (inside or outside of functions)
         var me = document.querySelector(`#me`)
         var you = document.querySelector(`#you`)
@@ -170,6 +178,10 @@
             console.log(`clicked reached`)
         }
 
+        
+
+        
+        //checking out the EVENT PARAMETER
         var button = document.querySelector(`#submit`)
 
         //anonymous function example below
@@ -178,7 +190,7 @@
             console.log(event)
         }//anonymous function close
         )//addEventListener() close
-
+        
 
 	</script>
 	

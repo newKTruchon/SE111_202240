@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W7 Mini Review Demo</title>
+</head>
+<body>
+
+    <h1>W#7 Mini Review Demo :]</h1>
+
+    <h2 id="title1">Title #1</h2>
+
+    <h2 id="title2">Title #2</h2>
+
+    <form>
+        <table>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="first">First Name: </label>
+                </td>
+                <td>
+                    <input type="text" id="first" name="first" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age">Age: </label>
+                </td>
+                <td>
+                    <input type="text" id="age" name="age" >
+                </td>
+            </tr> 
+            <tr>
+
+                <td>
+                  
+                </td>
+                <td>
+                    <input type="submit" id="submit" value="-submit-">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+
+
+    <h3>Box for Info to Display</h3>
+
+    <div id="info" style="border:1px solid black; min-height:200px; min-width:200px;"></div>
+
+
+    <!--In Document SCRIPT below-->
+    <script>
+        //global variables - these can be accessed anywhere (in or out of functions) after they have been declared!
+        var name = `Katie`
+        console.log(name)
+        //alert(`${name}`)
+
+        
+        var body = document.querySelector(`body`)
+
+        document.querySelector(`#submit`).addEventListener(`click`, clickButton)
+
+        
+        function clickButton(event) {
+
+            //these are local variables, we can only access them inside of this function!
+            var fname = document.querySelector(`#first`).value
+            var age = Number(document.querySelector(`#age`).value)
+
+            alert(`hi there ${fname}! You are ${age} years old!`)
+            
+            
+            //test out the global variables!
+            //alert(name)
+            //alert(body)
+
+        }//clickButton() close
+
+        //test the local variables -- notice that the alerts below don't work :[ that's because the variable values aren't recognized outside of the function!
+        //alert(fname)
+        //alert(age)
+
+    </script>
+    
+</body>
+</html>
